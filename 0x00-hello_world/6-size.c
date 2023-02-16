@@ -17,11 +17,3 @@ printf("Size of double: %lu bytes\n", sizeof(double));
 printf("Size of long double: %lu bytes\n", sizeof(long double));
 return (0);
 }
-Example Output:
-Size of char: 1 bytes
-Size of int: 4 bytes
-Size of long int: 8 bytes
-Size of long long int: 8 bytes
-Size of float: 4 bytes
-Size of double: 8 bytes
-Size of long double: 16 bytes
