@@ -18,7 +18,7 @@ void print_entry(unsigned long int e_entry, unsigned char *e_ident);
 void close_elf(int elf);
 
 /**
- * check_elf - Checks / Looks if a file is an ELF file.
+ * check_elf - Checks if a file is an ELF file.
  * @e_ident: A pointer to an array containing the ELF magic numbers.
  *
  * Description: If the file is not an ELF file - exit code 98.
@@ -89,7 +89,7 @@ void print_class(unsigned char *e_ident)
 
 /**
  * print_data - Prints the data of an ELF header.
- * @e_ident: A pointer / director to an array containing the ELF class.
+ * @e_ident: A pointer to an array containing the ELF class.
  */
 void print_data(unsigned char *e_ident)
 {
@@ -114,7 +114,8 @@ void print_data(unsigned char *e_ident)
 /**
  *  * print_version - Prints the version of an ELF header.
  *   * @e_ident: A pointer to an array containing the ELF version.
- *    */
+ *
+ */
 void print_version(unsigned char *e_ident)
 {
 	 printf(" Version: %d",
@@ -221,7 +222,7 @@ void print_type(unsigned int e_type, unsigned char *e_ident)
 }
 
 /**
- * print_entry - Prints the entry point / start of an ELF header.
+ * print_entry - Prints the entry point of an ELF header.
  * @e_entry: The address of the ELF entry point.
  * @e_ident: A pointer to an array containing the ELF class.
  */
@@ -247,7 +248,7 @@ void print_entry(unsigned long int e_entry, unsigned char *e_ident)
  * close_elf - Closes an ELF file.
  * @elf: The file descriptor of the ELF file.
  *
- * Description: Incase the file can't be closed - exit code 98.
+ * Description: If the file cannot be closed - exit code 98.
  */
 void close_elf(int elf)
 {
@@ -260,14 +261,14 @@ void close_elf(int elf)
 }
 
 /**
- * main - shows the information iniside in the
+ * main - Displays the information contained in the
  * ELF header at the start of an ELF file.
  * @argc: The number of arguments supplied to the program.
  * @argv: An array of pointers to the arguments.
  *
  * Return: 0 on success.
  *
- * Description: incase the file is not an ELF File or
+ * Description: If the file is not an ELF File or
  * the function fails - exit code 98.
  */
 int main(int __attribute__((__unused__)) argc, char *argv[])
